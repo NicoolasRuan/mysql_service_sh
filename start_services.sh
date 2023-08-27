@@ -17,10 +17,10 @@ if [ ! -e /dev/shm/mysql_apache_started ]; then
         case $resposta in
                 s)
                         echo "iniciando apache2 e mysql..."
-			sudo service apache2 restart
-			sudo service mysql restart
-			# Cria o arquivo temporário em /dev/shm para indicar que o script já foi executado
-    			touch /dev/shm/mysql_apache_started
+			            sudo service apache2 restart
+			            sudo service mysql restart
+			            # Cria o arquivo temporário em /dev/shm para indicar que o script já foi executado
+    			        touch /dev/shm/mysql_apache_started
                         ;;
                 n)
                         echo
